@@ -1,0 +1,308 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Jost', sans-serif;
+}
+
+body#home {
+    background-color: dimgray;
+    background-image: url(developer-4523094_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    padding: 150px 0;
+    color: black;
+}
+
+.box-timeline {
+    width: 100%;
+    height: 2500px;
+    background: none;
+    position: relative;
+    padding: 80px 0 250px 0;
+    margin-bottom: 100px;
+}
+
+.ligne {
+    height: 2200px;
+    width: 8px;
+    margin: 0 auto;
+    background: #333;
+}
+
+.rond {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    border: 1px solid #000;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+/* 1000 - 160 + 80 / 3 =~ 306 */
+
+.r1 {
+    top: 80px;
+}
+
+.r2 {
+    top: 386px;
+}
+
+.r3 {
+    top: 692px;
+}
+
+.r4 {
+    top: 1000px;
+}
+
+.r5 {
+    top: 1306px;
+}
+
+.r6 {
+    top: 1612px;
+}
+
+.r7 {
+    top: 1918px;
+}
+
+.r8 {
+    top: 2224px;
+}
+
+.box {
+    color: #333;
+    width: 400px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 3px;
+    height: auto;
+    background: #f1f1f1;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.b1 {
+    top: 80px;
+    left: calc(50% - 270px);
+}
+
+.b2 {
+    top: 386px;
+    left: calc(50% + 270px);
+}
+
+.b3 {
+    top: 692px;
+    left: calc(50% - 270px);
+}
+
+.b4 {
+    top: 1000px;
+    left: calc(50% + 270px);
+}
+
+.b5 {
+    top: 1306px;
+    left: calc(50% - 270px);
+}
+
+.b6 {
+    top: 1612px;
+    left: calc(50% + 270px);
+}
+
+.b7 {
+    top: 1918px;
+    left: calc(50% - 270px);
+}
+
+.b8 {
+    top: 2224px;
+    left: calc(50% + 270px);
+}
+
+.box p {
+    line-height: 20px;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}
+
+.btn {
+    display: block;
+    background: #ffd59e;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    color: #1d1b1b;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .ligne {
+        position: relative;
+        left: 200px;
+    }
+    .rond {
+        left: calc(50% + 200px);
+    }
+    .box {
+        left: calc(50% - 50px)
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    overflow: hidden;
+}
+
+li {
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+li a {
+    color: #333;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+li a:hover {
+    background-color: #ffd59e;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    block-size: 20px 10px 10px;
+}
+
+section {
+    position: absolute;
+}
+
+footer {
+    list-style-type: none;
+    margin: 0px;
+    padding-top: 250px;
+    display: flex;
+    text-align: center;
+}
+
+img {
+    width: 30px;
+}
+
+.icones {
+    font-size: 4px;
+    text-align: center;
+    block-size: auto;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#header h1 {
+    color: black;
+    text-align: center;
+}
+
+body#experience {
+    background-color: black;
+}
+
+form {
+    /* Uniquement centrer le formulaire sur la page */
+    margin: 0px auto;
+    width: 400px;
+    /* Encadré pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #333;
+    margin-top: 100px;
+}
+
+form div+div {
+    margin-top: 1em;
+}
+
+label {
+    /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+    display: inline-block;
+    width: 90px;
+    text-align: justify;
+}
+
+input,
+textarea {
+    /* Pour s'assurer que tous les champs texte ont la même police.
+       Par défaut, les textarea ont une police monospace */
+    font: 1em sans-serif;
+    /* Pour que tous les champs texte aient la même dimension */
+    width: 300px;
+    box-sizing: border-box;
+    /* Pour harmoniser le look & feel des bordures des champs texte */
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+input:focus,
+textarea:focus {
+    /* Pour souligner légèrement les éléments actifs */
+    border-color: #000;
+}
+
+textarea {
+    /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+    vertical-align: top;
+    border-radius: 10px;
+    /* Pour donner assez de place pour écrire du texte */
+    height: 5em;
+}
+
+.button {
+    /* Pour placer le bouton à la même position que les champs texte */
+    padding-left: 500px;
+    padding-top: 30px;
+    /* même taille que les étiquettes */
+}
+
+button {
+    /* Cette marge supplémentaire représente grosso modo le même espace que celui
+       entre les étiquettes et les champs texte */
+    margin-left: .5em;
+}
+
+#contact {
+    background-size: cover;
+    background-image: url(flat-lay-top-view-office-table-desk-workspace-with-notebook-laptop-palm-branch-coffee-cup-clips-white-background_408798-5952.jpg);
+}
