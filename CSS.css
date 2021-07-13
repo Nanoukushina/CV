@@ -11,10 +11,7 @@ html {
 }
 
 body#home {
-    background-color: dimgray;
-    background-image: url(developer-4523094_1280.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: white;
 }
 
 h1 {
@@ -34,9 +31,9 @@ h1 {
 
 .ligne {
     height: 2200px;
-    width: 8px;
+    width: 2px;
     margin: 0 auto;
-    background: #333;
+    background:#333;
 }
 
 .rond {
@@ -54,7 +51,7 @@ h1 {
     font-size: 30px;
 }
 
-
+/*TimeLine*/
 /* 1000 - 160 + 80 / 3 =~ 306 */
 
 .r1 {
@@ -233,12 +230,11 @@ img {
 }
 
 #header h1 {
-    color: black;
-    text-align: center;
+    /*background-image: image(url);*/
 }
 
-body#experience {
-    background-color: black;
+body#CV {
+    background-color: white;
 }
 
 form {
